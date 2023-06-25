@@ -45,3 +45,23 @@ functionC x y =
 functionS :: (a,b) -> b
 functionS (x,y) = y
 
+--Given a type, write the function
+function1 :: a -> a
+function1 a = a;
+
+function2 :: a -> b -> a
+function2 a _ = a 
+
+function5 :: [a] -> [a]
+function5 [] = []
+function5 (_:xs) = xs
+
+function6 :: (b -> c) -> (a -> b) -> a -> c
+function6 bToc aTob a = bToc (aTob a)
+
+function7 :: (a -> c) -> a -> a
+function7 _ a = a
+
+function8 :: (a -> b) -> a -> b
+function8 aTob a = aTob a 
+
