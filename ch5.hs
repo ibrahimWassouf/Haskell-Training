@@ -20,3 +20,16 @@ x' = "Julie"
 y' = " <3 "
 z' = "Haskell"
 f'' = x' ++ y' ++ z'
+
+--Does it compile Q 1-3
+bigNum = (^) 5
+wahoo = bigNum $ 10
+
+p = print
+o = print "woohoo!"
+i = p "hello world" 
+
+a' = (+)
+b' = a' $ 5
+c' = b' $ 10
+d' = a' c' $ 200 
