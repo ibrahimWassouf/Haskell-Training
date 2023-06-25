@@ -33,3 +33,15 @@ a' = (+)
 b' = a' $ 5
 c' = b' $ 10
 d' = a' c' $ 200 
+
+--Write a type signature Q 1-3
+functionH :: [a] -> a
+functionH (x:_) = x
+
+functionC :: (Ord a) => a -> a -> Bool
+functionC x y =
+  if (x > y) then True else False
+
+functionS :: (a,b) -> b
+functionS (x,y) = y
+
