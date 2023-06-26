@@ -65,3 +65,21 @@ function7 _ a = a
 function8 :: (a -> b) -> a -> b
 function8 aTob a = aTob a 
 
+--Fix it
+fstString :: [Char] -> [Char]
+fstString x = x ++ " in the rain"
+
+sndString :: [Char] -> [Char]
+sndString x = x ++ " over the rainbow"
+
+sing = if (x < y) then fstString x else sndString y
+  where x = "Singin"
+        y = "Somewhere"
+
+main :: IO ()
+main = do
+  print (1+2)
+  putStrLn "10"
+  print (negate (-1))
+  print ((+) 0 blah) 
+  where blah = negate 1
