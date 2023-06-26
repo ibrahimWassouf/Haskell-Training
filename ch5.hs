@@ -83,3 +83,48 @@ main = do
   print (negate (-1))
   print ((+) 0 blah) 
   where blah = negate 1
+
+--Type-Kwon-Do Qs
+newF :: Int -> String
+newF = undefined
+
+g :: String -> Char
+g = undefined
+
+h :: Int -> Char
+h intVar = g (newF intVar) 
+
+--Q2
+data A
+data B
+data C
+
+q :: A -> B
+q = undefined
+
+w' :: B -> C
+w' = undefined
+
+e' :: A -> C
+e' aVar = w' (q aVar)
+
+--Q3
+data X
+data Y
+data Z
+
+xz :: X -> Z
+xz = undefined
+
+yz :: Y -> Z
+yz = undefined
+
+xform :: (X, Y) -> (Z, Z)
+xform (xVar, yVar) = (xz xVar, yz yVar)
+
+--Q4
+munge :: (x -> y)
+         -> (y -> (w,z))
+         -> x
+         -> w
+munge xToy yToTuple xVar = fst (yToTuple (xToy xVar))
